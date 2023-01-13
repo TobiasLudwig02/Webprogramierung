@@ -7,6 +7,7 @@ window.onload = function (){
                     let varwohnort = "Weinheim" //Muss aus der DB gezogen werden
                     let varplz = "69469" //Muss aus der DB gezogen werden
                     let varland = "Deutschland" //Muss aus der DB gezogen werden
+                    let varführerschein = "A1234567890" //Muss aus der DB gezogen werden
                     let varemail = "tobias.ludwig@freudenberg.com" //Muss aus der DB gezogen werden
                     let varpasswort = "DHBWAdmin123." //Muss aus der DB gezogen werden
                     document.getElementById('varname').innerHTML = varname;
@@ -16,6 +17,7 @@ window.onload = function (){
                     document.getElementById('varwohnort').innerHTML = varwohnort;
                     document.getElementById('varplz').innerHTML = varplz;
                     document.getElementById('varland').innerHTML = varland;
+                    document.getElementById('varführerschein').innerHTML = varführerschein;
                     document.getElementById('varemail').innerHTML = varemail;
                     document.getElementById('varpasswort').innerHTML = varpasswort;
                     

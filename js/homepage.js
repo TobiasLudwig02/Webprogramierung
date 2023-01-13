@@ -1,21 +1,32 @@
-//Suche-Input
-$(function () {
-    Suche = createInputText({
-        "parent": $("#suche"),
-        "id":"suche",
-        // "labelText":"Suche",
-        "inputPlaceholder":"Suche",
-        //"hintText":"Ein Hinweistext, der etwas länger sein kann.",
-        "width":"100%"
-    });
+// //Suche-Input
+// $(function () {
+//     Suche = createInputText({
+//         "parent": $("#suche"),
+//         "id":"suche",
+//         // "labelText":"Suche",
+//         "inputPlaceholder":"Suche",
+//         //"hintText":"Ein Hinweistext, der etwas länger sein kann.",
+//         "width":"100%"
+//     });
 
+// });
+
+//MarkeDropdown
+$(function () {
+    Marke = createDropdown({
+        "parent":$("#marke"),
+        "id":"marke",
+    //    "labelText":"Standorte",
+        "listValues":{"Marke": "", "Mercedes": "Mercedes", "BMW":"BMW", 
+        "100€ - 200€":"100€ - 200€", "200€ - 500€": "200€ - 500€"},
+    });
 });
 
 //Suchbutton
 $(function () {
     SuchButton = createButtonBusy({
         "parent": $("#suchbutton"),
-        "title":"Suche",
+        "title":"Suchen",
         "cssClass": "btn-primary",
         "onClick": SuchButtonFunction
     });
@@ -53,18 +64,46 @@ $(function () {
     });
 });
 
+
+
 function SuchButtonFunction()
 {
-    let marke = Suche.getValue()
+    let marke = Marke.getValue()
     let standort = Standort.getValue()
     let preis = Preis.getValue()
     let verfügbarkeit = Verfügbarkeit.getValue()
-
-
     document.getElementById('varmarke').innerHTML = marke;
     document.getElementById('varstandort').innerHTML = standort;
     document.getElementById('varpreis').innerHTML = preis;
     document.getElementById('varverfügbarkeit').innerHTML = verfügbarkeit;
+
 }
 
+var imageButtonHolder1;
 
+
+$(function () {
+    imageButtonHolder1 = createImageButtonHolder({
+                "parent": $("#auto1"),
+                "singleActive": false,
+                "width": "400px",
+                "padding": "5px",
+                "margin": "10px"
+            });
+    imageButtonHolder1.addImageButton("Auto1","Smartbike2.0.jpg");
+
+});
+
+var imageButtonHolder2;
+
+$(function () {
+    imageButtonHolder2 = createImageButtonHolder({
+                "parent": $("#auto2"),
+                "singleActive": false,
+                "width": "400px",
+                "padding": "5px",
+                "margin": "10px"
+            });
+    imageButtonHolder2.addImageButton("Auto2","Smartbike2.0.jpg");
+
+});
