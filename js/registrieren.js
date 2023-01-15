@@ -68,7 +68,7 @@ $(function () {
     Postleitzahl = createInputText({
         "parent": $("#postleitzahl"),
         "id":"postleitzahl",
-        "labelText":"PLZ*",
+        "labelText":"Postleitzahl*",
         "inputPlaceholder":"Ihre Postleitzahl",
         //"hintText":"Ein Hinweistext, der etwas länger sein kann.",
         "width":"100%"
@@ -84,6 +84,19 @@ $(function () {
         "labelText":"Land*",
         "inputPlaceholder":"Ihr Land",
         //"hintText":"Ein Hinweistext, der etwas länger sein kann.",
+        "width":"100%"
+    });
+
+});
+
+//Führerschein-Input
+$(function () {
+    Führerschein = createInputText({
+        "parent": $("#führerschein"),
+        "id":"führerschein",
+        "labelText":"Führerschein Nr.*",
+        "inputPlaceholder":"Ihre Führerscheinnummer",
+        "hintText":"Nummer 5 auf dem deutschen Führerschein. 11 Zeichen lang!",
         "width":"100%"
     });
 
@@ -114,6 +127,17 @@ $(function () {
     });
 
 });
+
+//Bezahlmethoden
+$(function () {
+    Bezahlmethode = createDropdown({
+        "parent":$("#bezahlmethoden"),
+        "id":"bezahlmethoden",
+       // "labelText":"Bezahlmethode",
+        "listValues":{"Bezahlmethode":"Bezahlmethode", "Paypal":"Paypal", "Kreditkarte":"Kreditkarte", "GiroPay":"GiroPay", "Klarna":"Klarna"},
+    });
+});
+
 
 //AGB-Schalter
 $(function () {
@@ -196,6 +220,14 @@ function onButtonClick()
             i = i + 1
             Land.setHintText('')
         }
+        if (Führerschein.length == "")
+        {
+            Führerschein.setHintText('Geben Sie Ihre Führerscheinnummer ein! Nummer 5 auf dem deutschen Führerschein. 11 Zeichen lang!')
+   
+        } else {
+            i = i + 1
+            Führerschein.setHintText('')
+        }
 
         let email = Email.getValue()
         if (email == "")
@@ -222,7 +254,7 @@ function onButtonClick()
         }
 
         //Wenn alles korrekt ausgefüllt wurde => Weiterleitung auf die Login Page
-        if (AGBSchalter.isChecked() == true && i == 9)
+        if (AGBSchalter.isChecked() == true && i == 10)
         {
             window.open("login.html", '_blank').focus();
             window.close()
