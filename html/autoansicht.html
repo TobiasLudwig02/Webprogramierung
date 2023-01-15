@@ -1,25 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link href="../lib/bootstrap.5.0.2.min.css" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="../lib/jquery-3.6.0.min.js"></script><!-- not required by bootstrap-->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="../lib/bootstrap.5.0.2.bundle.min.js"></script>
-    <script src="../lib/jquery-3.6.0.min.js"></script><!-- not required by bootstrap-->
+ <!-- Elaspix-->
+ <script src="../lib/elaspix_inputText.js"></script>
+ <script src="../lib/elaspix_dropdown.js"></script>
+ <script src="../lib/elaspix_buttonBusy.js"></script>
+ <script src="../lib/elaspix_toast.js"></script>
+ <script src="../lib/elaspix_imageTextButton.js"></script>
+ <script src="../lib/elaspix_imageButtonHolder.js"></script>
 
-	<script src="../lib/elaspix_inputText.js"></script><!-- not required by bootstrap-->
-
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>    
 	<script src="../lib/elaspix_tagCard.js"></script>
-  <script src="../lib/elaspix_buttonBusy.js"></script>
-  <script src="../lib/elaspix_toast.js"></script>
-  <script src="../lib/elaspix_dropdown.js"></script>
-
 
   <!--JS-->
   <script src="../js/autoanisicht.js"></script>
@@ -64,23 +62,26 @@
   &nbsp;
 </div>
 
-  <h1>Autoansicht</h1>
+  <h1 id="varauto"></h1>
 
 <div class="container">
 	<div class="row" >
 		<div id="autoansicht" class="col">
 		</div>
     <div class="row">
-      <div class="col" id="tage">
+      <div class="col" id="tage"></div>
+      <div class="row">
+        <div class="col" id="favoriten"></div>
       </div>
-    <div class="row">
+
+      <div class="row">
+        <div class="scol" id="mietbutton">
+        </div>
+    <!-- <div class="row">
       <div class="scol" id="mietbutton">
       </div>
+    </div> -->
     </div>
-    </div>
-
-
-</div>
 
 </body>
 </html>

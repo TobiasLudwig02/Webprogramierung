@@ -94,7 +94,7 @@ $(function () {
     Führerschein = createInputText({
         "parent": $("#führerschein"),
         "id":"führerschein",
-        "labelText":"Führerschein Nr.",
+        "labelText":"Führerschein Nr.*",
         "inputPlaceholder":"Ihre Führerscheinnummer",
         "hintText":"Nummer 5 auf dem deutschen Führerschein. 11 Zeichen lang!",
         "width":"100%"
@@ -220,9 +220,10 @@ function onButtonClick()
             i = i + 1
             Land.setHintText('')
         }
-        if (Führerschein.length != 11)
+        if (Führerschein.length == "")
         {
             Führerschein.setHintText('Geben Sie Ihre Führerscheinnummer ein! Nummer 5 auf dem deutschen Führerschein. 11 Zeichen lang!')
+   
         } else {
             i = i + 1
             Führerschein.setHintText('')
