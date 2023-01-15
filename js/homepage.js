@@ -109,6 +109,12 @@ function autoClick()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 
 function SuchButtonFunction()
 {
+    //Daten zur Abfrage im Backend
+    let marke = Marke.getValue()
+    let standort = Standort.getValue()
+    let preis = Preis.getValue()
+    let verfügbarkeit = Verfügbarkeit.getValue()
+
     //Daten aus dem Backend
     let autoname1 = "Auto1"
     let autoname2 = "Auto2"
@@ -126,10 +132,7 @@ function SuchButtonFunction()
     imageButtonHolder4.addImageButton(autoname4, autourl4);
 
 
-    let marke = Marke.getValue()
-    let standort = Standort.getValue()
-    let preis = Preis.getValue()
-    let verfügbarkeit = Verfügbarkeit.getValue()
+    
     document.getElementById('varmarke').innerHTML = marke;
     document.getElementById('varstandort').innerHTML = standort;
     document.getElementById('varpreis').innerHTML = preis;
