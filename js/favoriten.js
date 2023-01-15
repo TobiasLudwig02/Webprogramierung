@@ -10,11 +10,11 @@ window.onload = function(){
     let autourl4 = "../img/porsche2.jpg"
 }
 
-let autoname1 = "Auto1"
+let autoname1 = ""
 let autoname2 = "Auto2"
 let autoname3 = "Auto3"
 let autoname4 = "Auto4"
-let autourl1 = "../img/AMG.jpg"
+let autourl1 = ""
 let autourl2 = "../img/G-Klasse.jpg"
 let autourl3 = "../img/porsche1.jpg"
 let autourl4 = "../img/porsche2.jpg"
