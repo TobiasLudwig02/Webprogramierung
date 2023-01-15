@@ -3,3 +3,15 @@ h1{
     margin-bottom: 50px;
 
 }
+
+.row{
+    margin-top: 30px;
+
+}
+
+.scol{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 500px;
+}
