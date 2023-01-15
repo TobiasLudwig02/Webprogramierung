@@ -1,9 +1,13 @@
 h1{
     text-align:center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 
 }
 
 .row{
     margin-top: 50px;
+}
+
+.place{
+    margin-top: 100px;
 }

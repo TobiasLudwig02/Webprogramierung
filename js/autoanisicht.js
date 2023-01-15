@@ -12,7 +12,7 @@ $(function () {
         "title": autoname,
         "description": autobeschreibung,
         "imageURL": autoansichturl,
-        "tags":["Baujahr 2015","Automatik","Benzin"]
+        "tags":["Baujahr 2015","Automatik","Benzin","50€ pro Tag"]
     });
 });
 
