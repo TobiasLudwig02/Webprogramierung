@@ -1,16 +1,3 @@
-// //Suche-Input
-// $(function () {
-//     Suche = createInputText({
-//         "parent": $("#suche"),
-//         "id":"suche",
-//         // "labelText":"Suche",
-//         "inputPlaceholder":"Suche",
-//         //"hintText":"Ein Hinweistext, der etwas länger sein kann.",
-//         "width":"100%"
-//     });
-
-// });
-
 //MarkeDropdown
 $(function () {
     Marke = createDropdown({
@@ -65,6 +52,33 @@ $(function () {
 });
 
 
+var imageButtonHolder1;
+$(function () {
+    imageButtonHolder1 = createImageButtonHolder({
+                "parent": $("#auto1"),
+                "singleActive": false,
+                "width": "400px",
+                "padding": "5px",
+                "margin": "10px"
+            });
+    imageButtonHolder1.addImageButton("Auto1","../img/AMG.jpg");
+
+});
+
+var imageButtonHolder2;
+
+$(function () {
+    imageButtonHolder2 = createImageButtonHolder({
+                "parent": $("#auto2"),
+                "singleActive": false,
+                "width": "400px",
+                "padding": "5px",
+                "margin": "10px"
+            });
+    imageButtonHolder2.addImageButton("Auto2","../img/G-Klasse.jpg");
+
+});
+
 
 function SuchButtonFunction()
 {
@@ -79,31 +93,4 @@ function SuchButtonFunction()
 
 }
 
-var imageButtonHolder1;
 
-
-$(function () {
-    imageButtonHolder1 = createImageButtonHolder({
-                "parent": $("#auto1"),
-                "singleActive": false,
-                "width": "400px",
-                "padding": "5px",
-                "margin": "10px"
-            });
-    imageButtonHolder1.addImageButton("Auto1","Smartbike2.0.jpg");
-
-});
-
-var imageButtonHolder2;
-
-$(function () {
-    imageButtonHolder2 = createImageButtonHolder({
-                "parent": $("#auto2"),
-                "singleActive": false,
-                "width": "400px",
-                "padding": "5px",
-                "margin": "10px"
-            });
-    imageButtonHolder2.addImageButton("Auto2","Smartbike2.0.jpg");
-
-});
