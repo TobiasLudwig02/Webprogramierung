@@ -1,4 +1,5 @@
 window.onload = function(){
+    checkLogin()
     //Daten aus dem Backend
     let autoname1 = "Auto1"
     let autoname2 = "Auto2"

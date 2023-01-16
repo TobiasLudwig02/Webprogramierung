@@ -1,25 +1,25 @@
 window.onload = function (){
-
-                    let varname = "Ludwig" //Muss aus der DB gezogen werden
-                    let varvorname = "Tobias" //Muss aus der DB gezogen werden
-                    let varstrasse = "Händelstraße" //Muss aus der DB gezogen werden
-                    let varhausnummer = "16" //Muss aus der DB gezogen werden
-                    let varwohnort = "Weinheim" //Muss aus der DB gezogen werden
-                    let varplz = "69469" //Muss aus der DB gezogen werden
-                    let varland = "Deutschland" //Muss aus der DB gezogen werden
-                    let varführerschein = "A1234567890" //Muss aus der DB gezogen werden
-                    let varemail = "tobias.ludwig@freudenberg.com" //Muss aus der DB gezogen werden
-                    let varpasswort = "DHBWAdmin123." //Muss aus der DB gezogen werden
-                    document.getElementById('varname').innerHTML = varname;
-                    document.getElementById('varvorname').innerHTML = varvorname;
-                    document.getElementById('varstrasse').innerHTML = varstrasse;
-                    document.getElementById('varhausnummer').innerHTML = varhausnummer;
-                    document.getElementById('varwohnort').innerHTML = varwohnort;
-                    document.getElementById('varplz').innerHTML = varplz;
-                    document.getElementById('varland').innerHTML = varland;
-                    document.getElementById('varführerschein').innerHTML = varführerschein;
-                    document.getElementById('varemail').innerHTML = varemail;
-                    document.getElementById('varpasswort').innerHTML = varpasswort;
+    checkLogin()
+    let varname = "Ludwig" //Muss aus der DB gezogen werden
+    let varvorname = "Tobias" //Muss aus der DB gezogen werden
+    let varstrasse = "Händelstraße" //Muss aus der DB gezogen werden
+    let varhausnummer = "16" //Muss aus der DB gezogen werden
+    let varwohnort = "Weinheim" //Muss aus der DB gezogen werden
+    let varplz = "69469" //Muss aus der DB gezogen werden
+    let varland = "Deutschland" //Muss aus der DB gezogen werden
+    let varführerschein = "A1234567890" //Muss aus der DB gezogen werden
+    let varemail = "tobias.ludwig@freudenberg.com" //Muss aus der DB gezogen werden
+    let varpasswort = "DHBWAdmin123." //Muss aus der DB gezogen werden
+    document.getElementById('varname').innerHTML = varname;
+    document.getElementById('varvorname').innerHTML = varvorname;
+    document.getElementById('varstrasse').innerHTML = varstrasse;
+    document.getElementById('varhausnummer').innerHTML = varhausnummer;
+    document.getElementById('varwohnort').innerHTML = varwohnort;
+    document.getElementById('varplz').innerHTML = varplz;
+    document.getElementById('varland').innerHTML = varland;
+    document.getElementById('varführerschein').innerHTML = varführerschein;
+    document.getElementById('varemail').innerHTML = varemail;
+    document.getElementById('varpasswort').innerHTML = varpasswort;
                     
                 }
                     

@@ -1,3 +1,7 @@
+window.onload = function(){
+    checkLogin()
+}
+
 //MarkeDropdown
 $(function () {
     Marke = createDropdown({
