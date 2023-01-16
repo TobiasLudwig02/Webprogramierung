@@ -1,0 +1,92 @@
+{
+    "auto1" : {
+       "id": 1,
+       "marke" : "Mercedes",
+       "standort": "Umgebung Mannheim",
+       "preis" : "100€ - 200€",
+       "verfügbar" : true,
+       "autoname" : "Mercedes-Benz C 63 AMG",
+       "autotags" : ["Limousine","350kW", "Benzin", "5 Sitzplätze", "Automatik", "175€ pro Tag"],
+       "url" : "../img/auto1.jpg",
+       "isfavorite" : false
+    },
+    
+    "auto2" : {
+        "id": 2,
+        "marke" : "Mercedes",
+        "standort": "Umgebung Stuttgart",
+        "preis" : "200€ - 500€",
+        "verfügbar" : true,
+        "autoname" : "Mercedes-Benz S 400 d 4MATIC",
+        "autotags" : ["Limousine","243kW", "Diesel", "5 Sitzplätze", "Automatik", "250€ pro Tag"],
+        "url" : "../img/auto2.jpg",
+        "isfavorite" : false
+     },
+     "auto3" : {
+        "id": 3,
+        "marke" : "BMW",
+        "standort": "Umgebung Hamburg",
+        "preis" : "50€ - 100€",
+        "verfügbar" : true,
+        "autoname" : "BMW 318D",
+        "autotags" : ["Limousine","110kW", "Diesel", "5 Sitzplätze", "Automatik", "75€ pro Tag"],
+        "url" : "../img/auto3.jpg",
+        "isfavorite" : false
+     },
+     "auto4" : {
+        "id": 4,
+        "marke" : "BMW",
+        "standort": "Umgebung Dortmund",
+        "preis" : "200€ - 500€",
+        "verfügbar" : true,
+        "autoname" : "BMW i4 M50",
+        "autotags" : ["Limousine","400kW", "Vollelektrisch", "5 Sitzplätze", "Automatik", "275€ pro Tag"],
+        "url" : "../img/auto4.jpg",
+        "isfavorite" : false
+     },
+     "auto5" : {
+        "id": 5,
+        "marke" : "VW",
+        "standort": "Umgebung Mannheim",
+        "preis" : "25€ - 50€",
+        "verfügbar" : true,
+        "autoname" : "Volkswagen Golf Plus Trendline",
+        "autotags" : ["75kW", "Benzin", "5 Sitzplätze", "Handschaltung", "35€ pro Tag"],
+        "url" : "../img/auto1.5pg",
+        "isfavorite" : false
+     },
+     "auto6" : {
+        "id": 6,
+        "marke" : "VW",
+        "standort": "Umgebung Stuttgart",
+        "preis" : "100€ - 200€",
+        "verfügbar" : true,
+        "autoname" : "Volkswagen Tiguan",
+        "autotags" : ["SUV","96kW", "Benzin", "5 Sitzplätze", "Schaltgetriebe", "110€ pro Tag"],
+        "url" : "../img/auto6.jpg",
+        "isfavorite" : false
+     },
+     "auto7" : {
+        "id": 7,
+        "marke" : "Audi",
+        "standort": "Umgebung Hamburg",
+        "preis" : "50€ - 100€",
+        "verfügbar" : true,
+        "autoname" : "Audi A3",
+        "autotags" : ["Limousine","85kW", "Diesel", "5 Sitzplätze", "Schaltgetriebe", "80€ pro Tag"],
+        "url" : "../img/auto7.jpg",
+        "isfavorite" : false
+     },
+     "auto8" : {
+        "id": 8,
+        "marke" : "Audi",
+        "standort": "Umgebung Dortmund",
+        "preis" : "100€ - 200€",
+        "verfügbar" : true,
+        "autoname" : "Audi e-tron GT quattro",
+        "autotags" : ["Limousine","350kW", "Vollelektrisch", "5 Sitzplätze", "Automatik", "190€ pro Tag"],
+        "url" : "../img/auto8.jpg",
+        "isfavorite" : false
+     }
+    
+ }

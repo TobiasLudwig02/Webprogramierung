@@ -5,13 +5,12 @@ window.onload = function(){
 
 let autoname = "AutoXY"
 let autoansichturl = "../img/AMG.jpg"
-let autobeschreibung = "Vallah beste Wagen, viele Chayas"
 
 $(function () {
     Autoansicht=createTagCard({
         "parent":$("#autoansicht"),
         "title": autoname,
-        "description": autobeschreibung,
+        // "description": autobeschreibung,
         "imageURL": autoansichturl,
         "tags":["Baujahr 2015","Automatik","Benzin","50€ pro Tag"]
     });

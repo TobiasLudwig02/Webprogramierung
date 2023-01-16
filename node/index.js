@@ -36,6 +36,13 @@ app.get('/listUsers', function (req, res) {  //link: http://127.0.0.1:8081/listU
   });
 })
 
+app.get('/listAutos', function (req, res) {  //link: http://127.0.0.1:8081/listUsers
+  fs.readFile( "autos.json", 'utf8', function (err, data) {
+     // console.log( data );
+     res.end( data );
+  });
+})
+
 app.get("/listUsers/id", (req, res) =>{
   res.send(req.params.id)
 } )
