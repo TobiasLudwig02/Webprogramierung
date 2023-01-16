@@ -29,7 +29,7 @@ var user = {
 //   });
 // })
 
-app.get('/listUsers', function (req, res) {
+app.get('/listUsers', function (req, res) {  //link: http://127.0.0.1:8081/listUsers
   fs.readFile( "users.json", 'utf8', function (err, data) {
      // console.log( data );
      res.end( data );
