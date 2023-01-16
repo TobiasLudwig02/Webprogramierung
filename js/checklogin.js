@@ -1,11 +1,11 @@
 function checkLogin()
     {
-        if (localStorage.getItem("storeEmail") == 0 && localStorage.getItem("storePasword") == 0)
+        if (localStorage.getItem("storeEmail") !== null && localStorage.getItem("storePassword") !== null)
+        {}
+        else 
         {
             window.open("login.html");
             window.close();
         }
-        else 
-        {}
 
     }

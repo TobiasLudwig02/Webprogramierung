@@ -50,8 +50,8 @@ function onLogin()
         {
             Passwort.setHintText('')
             window.open("homepage.html", '_blank').focus();
-            localStorage.setItem("storeEmail", Email.getValue());
-            localStorage.setItem("storePassword", Passwort.getValue());
+            localStorage.setItem("storeEmail", email);
+            localStorage.setItem("storePassword", password);
             window.close()
         }
 

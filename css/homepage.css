@@ -11,3 +11,8 @@ h1{
 .place{
     margin-top: 100px;
 }
+
+.logout{
+    float:right;
+	margin-right: 30px;
+}
