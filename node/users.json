@@ -1,0 +1,30 @@
+{
+    "user1" : {
+       "id": 1,
+       "name" : "Ludwig",
+       "vorname": "Tobias",
+       "strasse" : "Haendelstrasse",
+       "hausnummer" : "16",
+       "Wohnort" : "Weinheim",
+       "plz" : "69469",
+       "land" : "Deutschland",
+       "führerschein" : "A1234567890",
+       "email" : "email@web.de",
+       "passwort" : "DHBWAdmin123."
+    },
+    
+    "user2" : {
+        "id": 2,
+        "name" : "Test",
+        "vorname": "Test",
+        "strasse" : "Test",
+        "hausnummer" : "Test",
+        "Wohnort" : "Test",
+        "plz" : "Test",
+        "land" : "Test",
+        "führerschein" : "Test",
+        "email" : "Test@web.de",
+        "passwort" : "Cool"
+    }
+    
+ }
