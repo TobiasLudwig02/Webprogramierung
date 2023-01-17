@@ -1,66 +1,5 @@
-// app.post('/addUser', function (req, res) {
-//   // First read existing users.
-//   fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
-//      data = JSON.parse( data );
-//      data["user3"] = user["user3"];
-//     //  console.log( data );
-//      res.end( JSON.stringify(data));
-//   });
-// })
-
-// app.get('/listUsers', function (req, res) {  //link: http://127.0.0.1:8081/listUsers
-//   fs.readFile( "users.json", 'utf8', function (err, data) {
-//      // console.log( data );
-//      res.end( data );
-//   });
-// })
-
-// listAutos = [
-//   {
-//     "id": 1,
-//     "marke" : "Mercedes",
-//     "standort": "Umgebung Mannheim",
-//     "preis" : "100€ - 200€",
-//     "verfügbar" : true,
-//     "autoname" : "Mercedes-Benz C 63 AMG",
-//     "autotags" : ["Limousine","350kW", "Benzin", "5 Sitzplätze", "Automatik", "175€ pro Tag"],
-//     "url" : "../img/auto1.jpg",
-//     "isfavorite" : false
-//  },
-//  {
-//   "id": 2,
-//   "marke" : "Mercedes",
-//   "standort": "Umgebung Stuttgart",
-//   "preis" : "200€ - 500€",
-//   "verfügbar" : true,
-//   "autoname" : "Mercedes-Benz S 400 d 4MATIC",
-//   "autotags" : ["Limousine","243kW", "Diesel", "5 Sitzplätze", "Automatik", "250€ pro Tag"],
-//   "url" : "../img/auto2.jpg",
-//   "isfavorite" : false
-// },
-// {
-//   "id": 3,
-//   "marke" : "BMW",
-//   "standort": "Umgebung Hamburg",
-//   "preis" : "50€ - 100€",
-//   "verfügbar" : true,
-//   "autoname" : "BMW 318D",
-//   "autotags" : ["Limousine","110kW", "Diesel", "5 Sitzplätze", "Automatik", "75€ pro Tag"],
-//   "url" : "../img/auto3.jpg",
-//   "isfavorite" : false
-// }
-// ]
-
-// app.get('/listAutos', function (req, res) {  //link: http://127.0.0.1:8081/listAutos
-//    res.send(listAutos);
-    
-// })
-
-// app.get('/listAutos/:id', function (req, res) {  //link: http://127.0.0.1:8081/listAutos
-//   let auto = listAutos.find(c => c.id === parseInt(req.params.id))
-// if (!auto) res.status(404).send("Geht nicht Bruder");
-// res.send(auto)
-// })
+//Aufsetzen des Backends wurde vergeblich probiert
+//Dateien mit Autos und Usern wurden angelegt, siehe autos.json und users.json
 
 var express = require('express');
 var app = express();
@@ -68,7 +7,71 @@ app.use(express.json())
 var fs = require("fs");
 const port = 8000
 
-let name = Name.getValue()
+app.post('/addUser', function (req, res) {
+  // First read existing users.
+  fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
+     data = JSON.parse( data );
+     data["user3"] = user["user3"];
+    //  console.log( data );
+     res.end( JSON.stringify(data));
+  });
+})
+
+app.get('/listUsers', function (req, res) {  //link: http://127.0.0.1:8081/listUsers
+  fs.readFile( "users.json", 'utf8', function (err, data) {
+     // console.log( data );
+     res.end( data );
+  });
+})
+
+listAutos = [
+  {
+    "id": 1,
+    "marke" : "Mercedes",
+    "standort": "Umgebung Mannheim",
+    "preis" : "100€ - 200€",
+    "verfügbar" : true,
+    "autoname" : "Mercedes-Benz C 63 AMG",
+    "autotags" : ["Limousine","350kW", "Benzin", "5 Sitzplätze", "Automatik", "175€ pro Tag"],
+    "url" : "../img/auto1.jpg",
+    "isfavorite" : false
+ },
+ {
+  "id": 2,
+  "marke" : "Mercedes",
+  "standort": "Umgebung Stuttgart",
+  "preis" : "200€ - 500€",
+  "verfügbar" : true,
+  "autoname" : "Mercedes-Benz S 400 d 4MATIC",
+  "autotags" : ["Limousine","243kW", "Diesel", "5 Sitzplätze", "Automatik", "250€ pro Tag"],
+  "url" : "../img/auto2.jpg",
+  "isfavorite" : false
+},
+{
+  "id": 3,
+  "marke" : "BMW",
+  "standort": "Umgebung Hamburg",
+  "preis" : "50€ - 100€",
+  "verfügbar" : true,
+  "autoname" : "BMW 318D",
+  "autotags" : ["Limousine","110kW", "Diesel", "5 Sitzplätze", "Automatik", "75€ pro Tag"],
+  "url" : "../img/auto3.jpg",
+  "isfavorite" : false
+}
+]
+
+app.get('/listAutos', function (req, res) {  //link: http://127.0.0.1:8081/listAutos
+   res.send(listAutos);
+    
+})
+
+app.get('/listAutos/:id', function (req, res) {  //link: http://127.0.0.1:8081/listAutos
+  let auto = listAutos.find(c => c.id === parseInt(req.params.id))
+if (!auto) res.status(404).send("Geht nicht Bruder");
+res.send(auto)
+})
+
+
 
 var user = {
   "user3" : {

@@ -55,18 +55,15 @@ $(function () {
 function autoClick1()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 {
     window.open("./Autos/autoansicht2.html")
-    // window.close()
 }
 
 function autoClick2()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 {
     window.open("./Autos/autoansicht4.html")
-    // window.close()
 }
 
 function autoClick3()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 {
     window.open("./Autos/autoansicht7.html")
-    // window.close()
 }
 

@@ -1,15 +1,15 @@
 window.onload = function (){
     checkLogin()
-    let varname = localStorage.getItem("storeName") //Muss aus der DB gezogen werden
-    let varvorname = localStorage.getItem("storeVorame") //Muss aus der DB gezogen werden
-    let varstrasse = localStorage.getItem("storeStrasse") //Muss aus der DB gezogen werden
-    let varhausnummer = localStorage.getItem("storeHausnr") //Muss aus der DB gezogen werden
-    let varwohnort = localStorage.getItem("storeWohnort") //Muss aus der DB gezogen werden
-    let varplz = localStorage.getItem("storePostleitzahl") //Muss aus der DB gezogen werden
-    let varland = localStorage.getItem("storeLand") //Muss aus der DB gezogen werden
-    let varführerschein = localStorage.getItem("storeFührerschein") //Muss aus der DB gezogen werden
-    let varemail = localStorage.getItem("storeRegEmail") //Muss aus der DB gezogen werden
-    let varpasswort = localStorage.getItem("storeRegPasswort")//Muss aus der DB gezogen werden
+    let varname = localStorage.getItem("storeName") 
+    let varvorname = localStorage.getItem("storeVorname") 
+    let varstrasse = localStorage.getItem("storeStrasse") 
+    let varhausnummer = localStorage.getItem("storeHausnr")
+    let varwohnort = localStorage.getItem("storeWohnort") 
+    let varplz = localStorage.getItem("storePostleitzahl") 
+    let varland = localStorage.getItem("storeLand") 
+    let varführerschein = localStorage.getItem("storeFührerschein") 
+    let varemail = localStorage.getItem("storeRegEmail") 
+    let varpasswort = localStorage.getItem("storeRegPasswort")
     document.getElementById('varname').innerHTML = varname;
     document.getElementById('varvorname').innerHTML = varvorname;
     document.getElementById('varstrasse').innerHTML = varstrasse;
@@ -21,7 +21,7 @@ window.onload = function (){
     document.getElementById('varemail').innerHTML = varemail;
     document.getElementById('varpasswort').innerHTML = varpasswort;
                     
-                }
+}
                     
 
 //Profil löschen-Button
@@ -39,5 +39,21 @@ function ProfilLöschenFunction()
         localStorage.clear()
         location.reload(true)
 
-        
+}
+
+//Logout-Button
+$(function () {
+    ProfilLöschenButton = createButtonBusy({
+        "parent": $("#logout"),
+        "title":"Logout",
+        "cssClass": "btn-primary",
+        "onClick": LogOut
+    });
+});
+
+function LogOut()
+{
+    localStorage.setItem("storeLogEmail", "");
+    localStorage.setItem("storeLogPasswort", "");
+    location.reload(true)
 }

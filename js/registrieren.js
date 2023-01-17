@@ -162,8 +162,6 @@ $(function () {
     });
 });
 
-let name = Name.getValue()
-
 function storeValues()
     {
         localStorage.setItem("storeName", Name.getValue());
@@ -250,7 +248,7 @@ function onButtonClick()
         if (email == "")
         {
             Email.setHintText('Das Feld ist leer. Bitte geben Sie Ihre Emailadresse ein!')
-        } else if (email.indexOf("@") == -1)
+        } else if (email.indexOf("@") == -1)  //Überprüfen ob ein @ in der Eingabe enthalten ist 
         {
             Email.setHintText('Es wurde keine gültige Email eingetragen! Bitte geben Sie eine Emailadresse mit "@" ein!')
         }
@@ -260,7 +258,7 @@ function onButtonClick()
         }
 
         let password = Passwort.getValue()
-        if (password.length > 7 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[^a-zA-Z\d]/) && password.match(/\d/)) // Überprüfen ob Sonderzeichen
+        if (password.length > 7 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[^a-zA-Z\d]/) && password.match(/\d/)) // Überprüfen ob Sonderzeichen, Zahl, etc.
         {
             Passwort.setHintText('')
             i = i + 1
@@ -270,12 +268,12 @@ function onButtonClick()
             Passwort.setHintClass("text-danger")
         }
 
-        //Wenn alles korrekt ausgefüllt wurde => Weiterleitung auf die Login Page
+        //Wenn alles korrekt ausgefüllt wurde und AGBs akzeptiert wurden
         if (AGBSchalter.isChecked() == true && i == 10)
         {
         var par = "width=400,height=500,left=200,top=300"  //Parameter des Popups
         var time = "10000"  // Zeit zum kaufen
-        storeValues()
+        storeValues()  //Speicher der Daten im Localstorage
 
         if (Bezahlmethode.getValue() == "Paypal")
         {var Fenster = window.open('https://www.paypal.com/signin', "Paypal", par)

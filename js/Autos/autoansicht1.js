@@ -15,6 +15,7 @@ $(function () {
     });
 });
 
+//Dropdown für die Auswahl der Tage
 $(function () {
     Tage = createDropdown({
         "parent": $("#tage"),
@@ -43,6 +44,7 @@ $(function () {
 
 function favoritenClick()
 {
+        //In diesem Prototyp ist hier noch keine Funktion vorhanden
 }
 
 //Miet-Button
@@ -65,6 +67,7 @@ $(function () {
 });
 
 function Mieten(){
-    alert("Sie haben" + autoname + " für " + Tage.getValue() + " Tage erfolgreich gemietet")
+    preis = 175 * Tage.getValue()  //Ausrechnen des Preises
+    alert("Sie haben " + autoname + " für " + Tage.getValue() + " Tage für einen Preis von " + preis + "€ erfolgreich gemietet")
     Gemietet.show()
 }

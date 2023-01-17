@@ -202,19 +202,11 @@ function autoClick8()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 
 function SuchButtonFunction()
 {
-
-    // location.reload(true)
-    //Daten zur Abfrage im Backend
     let marke = Marke.getValue()
     let standort = Standort.getValue()
     let preis = Preis.getValue()
-    console.log(marke)
-    console.log(standort)
-    console.log(preis)
 
-    // let verfügbarkeit = Verfügbarkeit.getValue()
-
-    //Daten aus dem Backend
+    //Daten der Autos
     let autoname1 = "Mercedes-Benz C 63 AMG"
     let autoname2 = "Mercedes-Benz S 400 d 4MATIC"
     let autoname3 = "BMW 318D"
@@ -231,6 +223,11 @@ function SuchButtonFunction()
     let autourl6 = "../img/auto6.jpg"
     let autourl7 = "../img/auto7.jpg"
     let autourl8 = "../img/auto8.jpg"
+
+    //Marke: "Keine Auswahl": "0", "Mercedes": "1", "BMW":"2", "VW":"3", "Audi": "4"
+    //Standorte: "Keine Auswahl": "0", "Umgebung Mannheim":"1" , "Umgebung Stuttgart":"2", "Umgebung Hamburg": "3", "Umgebung Dortmund": "4"
+    //Preis: "Keine Auswahl": "0", "25€ - 50€": 1, "50€ - 100€":"2", "100€ - 200€":"3", "200€ - 500€": "4"
+
 
     if (marke == 0 && standort == 0 && preis == 0)
     {

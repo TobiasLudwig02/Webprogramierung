@@ -65,6 +65,7 @@ $(function () {
 });
 
 function Mieten(){
-    alert("Sie haben" + autoname + " für " + Tage.getValue() + " Tage erfolgreich gemietet")
+    preis = 250 * Tage.getValue()
+    alert("Sie haben " + autoname + " für " + Tage.getValue() + " Tage für einen Preis von " + preis + "€ erfolgreich gemietet")
     Gemietet.show()
 }
