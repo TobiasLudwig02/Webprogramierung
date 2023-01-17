@@ -3,16 +3,15 @@ window.onload = function(){
     document.getElementById('varauto').innerHTML = autoname;
 }
 
-let autoname = "AutoXY"
-let autoansichturl = "../img/AMG.jpg"
+let autoname = "Mercedes-Benz C 63 AMG"
+let autoansichturl = "../../img/auto1.jpg"
 
 $(function () {
     Autoansicht=createTagCard({
         "parent":$("#autoansicht"),
         "title": autoname,
-        // "description": autobeschreibung,
         "imageURL": autoansichturl,
-        "tags":["Baujahr 2015","Automatik","Benzin","50€ pro Tag"]
+        "tags":["Umgebung Mannheim", "Limousine","350kW", "Benzin", "5 Sitzplätze", "Automatik", "175€ pro Tag"]
     });
 });
 
@@ -38,13 +37,12 @@ $(function () {
                 "margin": "0px",
                 "onClick": favoritenClick
             });
-            Favoritenbutton.addImageButton("", "../img/stern.jpg");
+            Favoritenbutton.addImageButton("", "../../img/stern.jpg");
 
 });
 
 function favoritenClick()
 {
-    window.open("profil.html")
 }
 
 //Miet-Button
