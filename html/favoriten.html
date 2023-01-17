@@ -23,6 +23,11 @@
     <script language="javascript" type="text/javascript" src="../js/favoriten.js"></script>
     <script language="javascript" type="text/javascript" src="../js/checklogin.js"></script>
 
+     <!-- Footer -->
+     <link rel="stylesheet" href="../css/footer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
 
     <!-- Style Script-->
     <link rel="stylesheet" href="../css/favoriten.css">
@@ -34,7 +39,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="homepage.html">Home</a>
+        <a class="navbar-brand" href="homepage.html">
+          <img src="../img/logo.jpg" width="150" height="35" class="d-inline-block align-top" >
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,9 +55,13 @@
   
       <div class="d-flex align-items-center">
           <form class="nav navbar-right">
-            <a class="nav-link active" aria-current="page" href="favoriten.html">Favoriten</a>
-            <a class="navbar-brand" href="#"></a> <!--Abstandshalter-->
-              <a class="nav-link active" aria-current="page" href="profil.html">Profil</a>
+            <a class="navbar-brand" href="favoriten.html">
+              <img src="../img/stern.jpg" width="50" height="50" class="d-inline-block align-top" >
+            </a>
+              <a class="navbar-brand" href="#"></a> <!--Abstandshalter-->
+              <a class="navbar-brand" href="profil.html">
+                <img src="../img/profilbild.jpg" width="50" height="50" class="d-inline-block align-top" >
+              </a>
           </form>
         </div>
       
@@ -97,85 +108,36 @@
       &nbsp;
     </div>
 
-    <!-- Footer -->
-    <div class="container7 my-5">
-
-      <footer
-              class="text-center text-lg-start text-white"
-              style="background-color: #181a1f"
-              >
-
-        <section
-                 class="d-flex justify-content-between p-4"
-                 style="background: linear-gradient(to right, #efe7db, #a6abb1);"
-                 >
-
-          <div class="me-5">
-            <span class="	boldstyle"></span>
-          </div>
-
-          <div class="socialm">
-            <a href="" class="text-dark me-4">
-              <i class="fa fa-facebook-f"></i>
-            </a>
-            <a href="" class="text-dark me-4">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="" class="text-dark me-4">
-              <i class="fa fa-google"></i>
-            </a>
-            <a href="" class="text-dark me-4">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="" class="text-dark me-4">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="" class="text-dark me-4">
-              <i class="fa fa-github"></i>
-            </a>
-          </div>
-        </section>
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-5">
-                  <img src="../img/logo.jpg" width="50%" alt="">
-                </p>
+ <!-- Footer -->
+ <div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Links</h3>
+                  <ul>
+                      <li><a href="homepage.html">Homepapge</a></li>
+                      <li><a href="favoriten.html">Favoriten</a></li>
+                      <li><a href="profil.html">Profil</a></li>
+                  </ul>
               </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <h6 class="text-uppercase fw-bold text-white">Hilfreiche Links</h6>
-                <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #519226; height: 2px"
-                    />
-                <p>
-                  <a href="profil.html" class="text-white">Ihr Account</a>
-                </p>
-              </div>     
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                <h6 class="text-uppercase fw-bold text-white">Kontakt</h6>
-                <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #519226; height: 2px"
-                    />
-                <p><i class="fas fa-home mr-3 text-white"></i> Mannheim, 68163, Deutschland</p>
-                <p><i class="fas fa-envelope mr-3 text-white"></i> car4you@mail.com</p>
-                <p><i class="fas fa-phone mr-3 text-white"></i> + 49 234 567 89</p>
-                <p><i class="fas fa-print mr-3 text-white"></i> + 49 123 456 78</p>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Careers</a></li>
+                  </ul>
               </div>
-            </div>
+              <div class="col-md-6 item text">
+                  <h3>Car4You</h3>
+                  <p>Unser Company ist die Beste!</p>
+              </div>
+              <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
           </div>
-        </section>
-
-        <div
-             class="text-center p-3"
-             style="background-color: rgba(0, 0, 0, 0.2)"
-             >
-          © 2022 Copyright: Car4You GmbH
-        </div>
-
-      </footer>
+          <p class="copyright">Car4You © 2023</p>
+      </div>
+  </footer>
+</div>
   </body>
 </html>

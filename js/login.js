@@ -46,12 +46,13 @@ function onLogin()
         {
             Email.setHintText('Es wurde keine gültige Email eingetragen! Bitte geben Sie eine Emailadresse mit "@" ein!')
         }
-        else if (password.length > 7 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[^a-zA-Z\d]/) && password.match(/\d/)) // Überprüfen ob Sonderzeichen
+        else if (password.length > 7 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[^a-zA-Z\d]/) && password.match(/\d/) 
+        && localStorage.getItem("storeRegEmail") == email && localStorage.getItem("storeRegPasswort") == password) // Überprüfen ob Sonderzeichen
         {
             Passwort.setHintText('')
             window.open("homepage.html", '_blank').focus();
-            localStorage.setItem("storeEmail", email);
-            localStorage.setItem("storePassword", password);
+            localStorage.setItem("storeLogEmail", email);
+            localStorage.setItem("storeLogPasswort", password);
             window.close()
         }
 

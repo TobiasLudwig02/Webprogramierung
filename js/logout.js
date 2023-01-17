@@ -10,6 +10,7 @@ $(function () {
 
 function LogOut()
 {
-    localStorage.clear()
-    location.reload(true);
+    localStorage.setItem("storeLogEmail", "");
+    localStorage.setItem("storeLogPasswort", "");
+    location.reload(true)
 }

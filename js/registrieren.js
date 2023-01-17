@@ -162,6 +162,23 @@ $(function () {
     });
 });
 
+let name = Name.getValue()
+
+function storeValues()
+    {
+        localStorage.setItem("storeName", Name.getValue());
+        localStorage.setItem("storeVorname", Vorname.getValue());
+        localStorage.setItem("storeStrasse", Strasse.getValue());
+        localStorage.setItem("storeHausnr", Hausnr.getValue());
+        localStorage.setItem("storeWohnort", Wohnort.getValue());
+        localStorage.setItem("storePostleitzahl", Postleitzahl.getValue());
+        localStorage.setItem("storeFührerschein", Führerschein.getValue());
+        localStorage.setItem("storeLand", Land.getValue());
+        localStorage.setItem("storeRegEmail", Email.getValue());
+        localStorage.setItem("storeRegPasswort", Passwort.getValue());
+    }
+
+
 function onButtonClick()
     { 
         //Checken, ob alles ausgefüllt wurde
@@ -256,8 +273,25 @@ function onButtonClick()
         //Wenn alles korrekt ausgefüllt wurde => Weiterleitung auf die Login Page
         if (AGBSchalter.isChecked() == true && i == 10)
         {
-            window.open("login.html", '_blank').focus();
-            window.close()
+        var par = "width=400,height=500,left=200,top=300"  //Parameter des Popups
+        var time = "10000"  // Zeit zum kaufen
+        storeValues()
+
+        if (Bezahlmethode.getValue() == "Paypal")
+        {var Fenster = window.open('https://www.paypal.com/signin', "Paypal", par)
+        setTimeout(() => {Fenster.window.close(),window.close(), window.open("login.html", '_blank').focus();}, time);}
+        else if (Bezahlmethode.getValue() == "Kreditkarte")
+        {var Fenster = window.open('https://www.americanexpress.com/de-de/account/login?inav=iNLogBtn', "Kreditkarte", par)
+        setTimeout(() => {Fenster.window.close(), window.open("login.html", '_blank').focus();}, time);}
+        else if (Bezahlmethode.getValue() == "GiroPay")
+        {var Fenster = window.open('https://www.sparkasse-heidelberg.dhttps://www.paydirekt.de/account/#/logine/de/home/login-online-banking.html', "GiroPay", par)
+        setTimeout(() => {Fenster.window.close(), window.open("login.html", '_blank').focus();}, time);}
+        else if (Bezahlmethode.getValue() == "Klarna")
+        {var Fenster = window.open('https://app.klarna.com/login', "Klarna", par)
+        setTimeout(() => {Fenster.window.close(), window.open("login.html", '_blank').focus();}, time);}
+         
+        
         }
     }
-    
+
+
