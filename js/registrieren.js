@@ -284,7 +284,7 @@ function onButtonClick()
         {var Fenster = window.open('https://www.americanexpress.com/de-de/account/login?inav=iNLogBtn', "Kreditkarte", par)
         setTimeout(() => {Fenster.window.close(), window.open("login.html", '_blank').focus();}, time);}
         else if (Bezahlmethode.getValue() == "GiroPay")
-        {var Fenster = window.open('https://www.sparkasse-heidelberg.dhttps://www.paydirekt.de/account/#/logine/de/home/login-online-banking.html', "GiroPay", par)
+        {var Fenster = window.open('https://www.paydirekt.de/account/#/login', "GiroPay", par)
         setTimeout(() => {Fenster.window.close(), window.open("login.html", '_blank').focus();}, time);}
         else if (Bezahlmethode.getValue() == "Klarna")
         {var Fenster = window.open('https://app.klarna.com/login', "Klarna", par)

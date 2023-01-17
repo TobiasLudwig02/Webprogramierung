@@ -1,24 +1,13 @@
 window.onload = function(){
     checkLogin()
-    //Daten aus dem Backend
-    let autoname1 = "Auto1"
-    let autoname2 = "Auto2"
-    let autoname3 = "Auto3"
-    let autoname4 = "Auto4"
-    let autourl1 = "../img/AMG.jpg"
-    let autourl2 = "../img/G-Klasse.jpg"
-    let autourl3 = "../img/porsche1.jpg"
-    let autourl4 = "../img/porsche2.jpg"
 }
 
-let autoname1 = ""
-let autoname2 = "Auto2"
-let autoname3 = "Auto3"
-let autoname4 = "Auto4"
-let autourl1 = ""
-let autourl2 = "../img/G-Klasse.jpg"
-let autourl3 = "../img/porsche1.jpg"
-let autourl4 = "../img/porsche2.jpg"
+let autoname1 = "Mercedes-Benz S 400 d 4MATIC"
+let autoname2 = "BMW i4 M50"
+let autoname3 = "Audi A3"
+let autourl1 = "../img/auto2.jpg"
+let autourl2 = "../img/auto4.jpg"
+let autourl3 = "../img/auto7.jpg"
 
 //Autobild1
 $(function () {
@@ -28,7 +17,7 @@ $(function () {
                 "width": "400px",
                 "padding": "5px",
                 "margin": "10px",
-                "onClick": autoClick
+                "onClick": autoClick1
             });
             imageButtonHolder1.addImageButton(autoname1, autourl1);
 
@@ -42,7 +31,7 @@ $(function () {
                 "width": "400px",
                 "padding": "5px",
                 "margin": "10px",
-                "onClick": autoClick
+                "onClick": autoClick2
             });
             imageButtonHolder2.addImageButton(autoname2, autourl2);
 
@@ -56,29 +45,28 @@ $(function () {
                 "width": "400px",
                 "padding": "5px",
                 "margin": "10px",
-                "onClick": autoClick
+                "onClick": autoClick3
             });
             imageButtonHolder3.addImageButton(autoname3, autourl3);
 
 });
 
-//Autobild4
-$(function () {
-    imageButtonHolder4 = createImageButtonHolder({
-                "parent": $("#auto4"),
-                "singleActive": false,
-                "width": "400px",
-                "padding": "5px",
-                "margin": "10px",
-                "onClick": autoClick
-            });
-            imageButtonHolder4.addImageButton(autoname4, autourl4);
 
-});
-
-function autoClick()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
+function autoClick1()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 {
-    window.open("autoansicht.html")
+    window.open("./Autos/autoansicht2.html")
+    // window.close()
+}
+
+function autoClick2()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
+{
+    window.open("./Autos/autoansicht4.html")
+    // window.close()
+}
+
+function autoClick3()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
+{
+    window.open("./Autos/autoansicht7.html")
     // window.close()
 }
 

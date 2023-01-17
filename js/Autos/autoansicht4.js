@@ -21,7 +21,7 @@ $(function () {
         "id":"tage",
         "labelText":"Tage",
         "titleText":"Tageee",
-        "listValues": {"1":0,"2":1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6},
+        "listValues": {"1":1,"2":2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7},
         "width":"50%"
     });
 });
@@ -65,7 +65,6 @@ $(function () {
 });
 
 function Mieten(){
-    alert("Erfolgreich gemietet!")
-    document.getElementById('varauto').innerHTML = autoname;
+    alert("Sie haben" + autoname + " für " + Tage.getValue() + " Tage erfolgreich gemietet")
     Gemietet.show()
 }

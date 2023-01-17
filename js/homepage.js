@@ -196,7 +196,7 @@ $(function () {
 
 function autoClick8()  //Aufruf der Autoansichtseite beim klicken auf ein Auto
 {
-    window.open("./Autos/autoansicht.html")
+    window.open("./Autos/autoansicht8.html")
     // window.close()
 }
 
